@@ -2,6 +2,8 @@
 // Created by ayesdie on 22/08/19.
 //
 
+// Enter 2 strings, verify if the second string is substring of first or not.
+
 #include<stdio.h>
 
 int main()

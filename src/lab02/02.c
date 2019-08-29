@@ -2,6 +2,8 @@
 // Created by ayesdie on 22/08/19.
 //
 
+// Count the number of vowels, consonants and digits.
+
 #include <stdio.h>
 #include <stdlib.h>
 

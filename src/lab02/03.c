@@ -2,6 +2,8 @@
 // Created by ayesdie on 22/08/19.
 //
 
+// Enter an email-id, verify it's validity.
+
 #include<stdio.h>
 
 int main() {
