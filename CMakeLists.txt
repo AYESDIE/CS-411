@@ -7,8 +7,8 @@ option(DELETE_INTERMEDIATE "Deletes Lex and Yacc intermediate files at location 
 
 find_package(FLEX REQUIRED)
 
-file(GLOB SRC src/lab*/*.c)
 file(GLOB FLEX_SRC src/lab*/*.l)
+file(GLOB FILE_SRC src/*/*.txt)
 
 message("——————————————————————————————————————————————————————————————————————")
 message("
@@ -34,6 +34,7 @@ if (FLEX_FOUND)
     endforeach()
 endif()
 
+file(GLOB SRC src/lab*/*.c)
 message("\n-- CMake: Adding executables.")
 foreach(file ${SRC})
     # Update the executable name.
@@ -51,8 +52,10 @@ endforeach()
 
 message("——————————————————————————————————————————————————————————————————————")
 
-file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/src/lab02/lipsum.txt
-        DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
+foreach(file ${FILE_SRC})
+    file(COPY ${file}
+            DESTINATION ${CMAKE_CURRENT_BINARY_DIR}/data)
+endforeach()
 
 if (DELETE_INTERMEDIATE)
     message("\n-- Deleting intemediate files:")

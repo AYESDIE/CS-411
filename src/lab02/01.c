@@ -25,7 +25,7 @@ int main()
     ssize_t line_size;
     size_t wordCount = 0;
     FILE *fptr;
-    if((fptr = fopen("./lipsum.txt", "r")) != NULL)
+    if((fptr = fopen("./data/lipsum.txt", "r")) != NULL)
     {
         char *text = NULL;
         size_t len;

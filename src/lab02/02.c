@@ -66,7 +66,7 @@ int main()
     size_t consonantCount = 0;
     size_t digitCount = 0;
     FILE *fptr;
-    if((fptr = fopen("./lipsum.txt", "r")) != NULL)
+    if((fptr = fopen("./data/lipsum.txt", "r")) != NULL)
     {
         char *text = NULL;
         size_t len;
