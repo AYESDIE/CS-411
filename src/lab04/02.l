@@ -16,10 +16,10 @@ return 1;
 
 int main()
 {
-yyin = fopen("./data/04_02.txt", "r");
+//yyin = fopen("./data/04_02.txt", "r");
 yylex();
 printf("num_operator: %d\n", num_operator);
 printf("num_operand: %d\n", num_operand);
-fclose(yyin);
+//fclose(yyin);
 return 0;
 }

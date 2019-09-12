@@ -15,10 +15,10 @@ return 1;
 
 int main()
 {
-yyin = fopen("./data/04_04.txt", "r");
+//yyin = fopen("./data/04_04.txt", "r");
 yylex();
 printf("\nnum_scomment: %d\n", num_scomment);
 printf("num_mcomment: %d\n", num_mcomment);
-fclose(yyin);
+//fclose(yyin);
 return 0;
 }

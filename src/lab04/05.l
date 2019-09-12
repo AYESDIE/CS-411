@@ -13,9 +13,9 @@ return 1;
 
 int main()
 {
-yyin = fopen("./data/04_05.txt", "r");
+//yyin = fopen("./data/04_05.txt", "r");
 yylex();
 printf("\nemail: %d\n", num_email);
-fclose(yyin);
+//fclose(yyin);
 return 0;
 }

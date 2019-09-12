@@ -17,11 +17,11 @@ return 1;
 
 int main()
 {
-yyin = fopen("./data/04_03.txt", "r");
+//yyin = fopen("./data/04_03.txt", "r");
 yylex();
 printf("\nnum_line: %d\n", num_line);
 printf("num_word: %d\n", num_word);
 printf("num_digit: %d\n", num_digit);
-fclose(yyin);
+//fclose(yyin);
 return 0;
 }
