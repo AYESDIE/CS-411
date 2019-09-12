@@ -3,7 +3,7 @@
 %}
 
 %%
-[a-z] { printf("%c", yytext[0] 05   - 32); }
+[a-z] { printf("%c", yytext[0] - 32); }
 [A-Z] { printf("%c", yytext[0] + 32); }
 [\t\n] ECHO;
 . ECHO;
