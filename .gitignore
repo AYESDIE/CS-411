@@ -6,3 +6,7 @@ build/
 cmake-build-debug/
 
 *.yy.c
+
+*.tab.c
+
+*.tab.h
